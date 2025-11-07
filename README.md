@@ -10,6 +10,14 @@ This application is a basic Express.js web server that:
 - Includes a health check endpoint at `/health`
 - Runs on port 3000 by default (configurable via PORT environment variable)
 
+## Reflection Question
+
+**How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs?**
+
+**Answer:** The host operating system is shared by Docker containers, which include only the application and its dependencies to achieve lightweight operation and rapid startup times. Virtual machines need a complete guest operating system for each instance, which results in increased size and reduced performance. Teams choose Docker because containers enable consistent deployment, reduce resource consumption, and resolve deployment problems that result from "it works on my machine" issues.
+
+---
+
 ## What's Included
 
 - **app.js**: Main application server file
@@ -19,10 +27,10 @@ This application is a basic Express.js web server that:
 
 ## Running Without Docker (for reference only)
 
-If you wanted to run this application directly (not required for assignment):
 ```bash
 npm install
 npm start
+
 
 
 
